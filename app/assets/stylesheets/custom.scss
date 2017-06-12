@@ -1,0 +1,91 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #777;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+/*
+    header
+    変数宣言 + ネスト:
+    $color1: #333;
+    $color2: #444;
+    h1{
+      font-size: 24px;
+      a{
+        color: $color1;
+        &:hover{
+          color: $color2;
+        }
+      }
+    }
+*/
+
+header{
+  height: 80px;
+}
+.navbar-brand{
+  color: white !important;
+  display: inline-block;
+  height: 80px;
+  font-size: 40px;
+  line-height: 50px;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.nav li{
+  height: 80px;
+  font-size: 16px;
+  line-height: 80px;
+  a {
+    display: inline-block;
+    height: 80px;
+    &:hover{
+      color: skyblue !important;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}
