@@ -1,3 +1,4 @@
+/*
 $(document).ready(function() {
   //var stage = document.getElementById('stage');
   var stage = $('#stage')[0];
@@ -12,3 +13,4 @@ $(document).ready(function() {
   stage.width = width;
   stage.height = height;
 });
+*/

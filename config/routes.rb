@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get '/signup', to: 'users#new'
 
   get '/canvas', to: 'canvas#canvas'
+
+  get '/jump', to: 'canvas#jump'
 end

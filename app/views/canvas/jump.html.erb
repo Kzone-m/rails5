@@ -1,0 +1,49 @@
+<% provide(:title, "Jump")%>
+
+<!-- HTML Starts -->
+<div style="text-align: center;">
+  <!-- Title -->
+  <h1>スクロール実験</h1>
+
+  <!-- Jump Contents -->
+  <p>Hello!</p><br><br><br><br><br><br><br><br><br><br><br><br>
+  <p>Hello!</p><br><br><br><br><br><br><br><br><br><br><br><br>
+  <p>Hello!</p><br><br><br><br><br><br><br><br><br><br><br><br>
+  <p>Hello!</p><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Current Position of Window -->
+  <div id="back-to-top" style="position:fixed; right: 20px; bottom: 10px;">
+    <h1><a href="#">↑</a></h1>
+  </div>
+
+  <!-- Jump Button -->
+  <div id="scroll-position" style="position:fixed; left: 20px; bottom: 10px;">
+  </div>
+</div>
+
+
+<!-- Javascript Starts -->
+<script type="text/javascript">
+  $(function(){
+  // #back-to-topを表示
+      $('#back-to-top').hide();
+
+  // スクロールが十分されたらback-to-topを表示、スクロールが戻ったら非表示
+      $(window).scroll(function(){
+        $('#scroll-position').text($(this).scrollTop());
+        if($(this).scrollTop() > 60){
+          $('#back-to-top').fadeIn();
+        }else{
+          $('#back-to-top').fadeIn();
+        }
+      });
+
+  // back-to-topがクリックされたら上に戻る
+      $('#back-to-top a').click(function(){
+        $('body').animate({
+          scrollTop:0
+        }, 500);
+        return false;
+      });
+  })
+</script>
