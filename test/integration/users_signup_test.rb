@@ -25,5 +25,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     follow_redirect!
     assert_template 'users/show'    # show.html.erb
+    assert is_logged_in?
   end
 end
