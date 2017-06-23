@@ -1,11 +1,15 @@
-# README
+# JQTraveler
+===
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first ruby on rails web application. It is mostly based on "ruby on rails tuorial", but I have added some rails' implementations for making sure what's going on. I have also create some views and controllers in order to help me understand Javascript.
 
-Things you may want to cover:
+This app infomation:
 
 * Ruby version
+- 2.2.5
+
+* Rails version
+- 5.1.1
 
 * System dependencies
 
