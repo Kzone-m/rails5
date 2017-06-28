@@ -1,5 +1,5 @@
 <%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages' %>
+  <%= render 'shared/error_messages', object: f.object %>
   <div class="form-item">
     <%= f.label :name, class: "label label-default" %>
     <%= f.text_field :name, class: "form-control", value: @user.name %>
