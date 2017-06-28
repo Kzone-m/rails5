@@ -8,7 +8,8 @@ class SessionsController < ApplicationController
       log_in user # session[:user_id]
       # remember user # nToken > rDigest > rToken > cookies[:user_id],[rToken]
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-      redirect_to user # user_url > users#show > /users/id
+      redirect_back_or user
+      # redirect_to user # user_url > users#show > /users/id
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
